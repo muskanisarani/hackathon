@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Farmer Dashboard - Bridging Farmers and Consumers</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <!-- <nav>
+      <a href="index.html">Home</a>
+      <a href="farmers.html">Farmer Dashboard</a>
+      <a href="consumers.html">Consumer Dashboard</a>
+    </nav> -->
+  </header>
+
+  <main>
+    <h1>Farmer Dashboard</h1>
+    <p>Welcome, farmer! Manage your profile and products here.</p>
+
+    <section>
+      <h2>Register as a Verified Farmer</h2>
+      <form id="farmer-form">
+        <label for="farmer-name">Name:</label>
+        <input type="text" id="farmer-name" required>
+<br>
+        <label for="farm-name">Farm Name:</label>
+        <input type="text" id="farm-name" required>
+<br>
+        <label for="farming-practices">Farming Practices:</label>
+        <textarea id="farming-practices" rows="4" placeholder="Describe your farming practices..." required></textarea>
+<br>
+        <label for="certification">Upload Certification:</label>
+        <input type="file" id="certification" required>
+<br>
+        <button type="submit">Register Farm</button>
+      </form>
+    </section>
+
+    <!-- <section>
+      <h2>Your Products</h2>
+      <div class="product">
+        <h3>Organic Tomatoes</h3>
+        <p>Price: $3 per kg</p>
+        <button>View Product</button>
+      </div>
+
+      <div class="product">
+        <h3>Fresh Green Beans</h3>
+        <p>Price: $2 per kg</p>
+        <button>View Product</button>
+      </div>
+    </section> -->
+
+    <section>
+      <h2>Edit Profile</h2>
+      <p><strong>Update your farm's information and products anytime!</strong></p>
+      <button>Update Profile</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Bridging Farmers and Consumers</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
