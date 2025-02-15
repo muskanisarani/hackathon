@@ -1,59 +1,119 @@
-/* styles.css */
-body {
-  font-family: Arial, sans-serif;
+html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f9;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #a8ff78, #78ffd6);
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 header {
-  background-color: #bb0808d3;
-  color: white;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  color: black;
   padding: 20px;
   text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px); /* Adds a glass effect */
 }
 
 header nav ul {
   list-style-type: none;
+  padding: 0;
 }
 
 header nav ul li {
-  display: inline;
-  margin: 0 15px;
+  display: inline-block;
+  margin: 0 20px;
 }
 
 header nav ul li a {
-  color: white;
+  color: black;
   text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
 }
 
-section {
-  padding: 20px;
-  margin: 20px 0;
-  width:100%;
-  margin-bottom: 100px;
+header nav ul li a:hover {
+  color: #2c3e50;
+}
+
+main {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 40px 20px;
 }
 
 .product {
   border: 1px solid #ddd;
-  padding: 15px;
-  background-color: white;
+  padding: 20px;
+  background: white;
   text-align: center;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out;
+}
+
+.product:hover {
+  transform: scale(1.05);
 }
 
 .product img {
   width: 100%;
-  max-width: 200px;
+  max-width: 250px;
+  border-radius: 12px;
+}
+
+form {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 25px;
+  max-width: 500px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px);
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 button {
-  background-color: #3846db90;
+  background: #ff6b6b;
   color: white;
-  padding: 10px 20px;
+  padding: 12px 20px;
   border: none;
+  border-radius: 8px;
   cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
 }
 
 button:hover {
-  background-color: #edf331;
+  background: #ff4757;
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
