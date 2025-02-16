@@ -18,48 +18,63 @@
     <h1>Farmer Dashboard</h1>
     <p>Welcome, farmer! Manage your profile and products here.</p>
 
-    <section>
-      <h2>Register as a Verified Farmer</h2>
-      <form id="farmer-form">
-        <label for="farmer-name" >Name:</label>
-        <input type="text" id="farmer-name" aria-placeholder="Enter-Your Name:" required>
-<br>
-        <label for="farm-name">Farm Name:</label>
-        <input type="text" id="farm-name" required>
-<br>
-        <label for="farming-practices">Farming Practices:</label>
-        <textarea id="farming-practices" rows="4" placeholder="Describe your farming practices..." required></textarea>
-<br>
-        <label for="certification">Upload Certification:</label>
-        <input type="file" id="certification" required>
-<br>
-        <button type="submit">Register Farm</button>
-     
-    </section>
-
-    <section>
-      <h2>Generate QR Code</h2>
-      <input type="text" id="qrText" placeholder="Enter text for QR code">
+    <h2>Register as a Verified Farmer</h2>
+    <form id="farmer-form">
+      <label for="farmer-name">Farmer Name:</label>
+      <input type="text" id="farmer-name" placeholder="Enter Your Name" required>
       
-      <div id="qrCode"></div>
-    </section>    
-  </form>
-  <button type="button" onclick="generateQR()">Generate QR Code</button>
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" placeholder="Enter Phone Number" required>
 
-    <!-- <section>
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter Email" required>
+
+      <label for="farm-address">Farm Location:</label>
+      <input type="text" id="farm-address" placeholder="Enter Farm Address" required>
+
+      <label for="Product-name">Product Name:</label>
+      <input type="text" id="Product-name" placeholder="Enter Product Name" required>
+
+      <label for="Product-Price">Product Price:</label>
+      <input type="number" id="price" placeholder="Enter Price" required>
+
+      <label for="product-image">Upload Product Image:</label>
+      <input type="file" id="product-image" required>
+
+      <label for="farming-practices">Farming Practices:</label>
+      <textarea id="farming-practices" rows="4" placeholder="Describe your farming practices..." required></textarea>
+
+      <label for="certification">Certification Type:</label>
+      <select id="certification" required>
+        <option value="organic">Organic Certified</option>
+        <option value="natural">Natural Farming</option>
+        <option value="pesticide-free">Pesticide-Free</option>
+      </select>
+
+      <label for="certification-file">Upload Certification:</label>
+      <input type="file" id="certification-file" required>
+
+      <button type="submit">Register Farm</button>
+    </form>
+
+    <h2>Generate QR Code</h2>
+    <button id="generateQRBtn">Generate QR Code</button>
+    <div id="qrCode"></div>
+
+    <section>
       <h2>Your Products</h2>
       <div class="product">
         <h3>Organic Tomatoes</h3>
-        <p>Price: $3 per kg</p>
+        <p>Price: ₹150 per kg</p>
         <button>View Product</button>
       </div>
 
       <div class="product">
         <h3>Fresh Green Beans</h3>
-        <p>Price: $2 per kg</p>
+        <p>Price: ₹100 per kg</p>
         <button>View Product</button>
       </div>
-    </section> -->
+    </section>
 
     <section>
       <h2>Edit Profile</h2>
@@ -71,7 +86,8 @@
   <footer>
     <p>&copy; 2025 Bridging Farmers and Consumers</p>
   </footer>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-  <script src="scripts.js"></script>
+  <script src="farmers.js"></script>
 </body>
 </html>
