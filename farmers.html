@@ -34,8 +34,17 @@
         <input type="file" id="certification" required>
 <br>
         <button type="submit">Register Farm</button>
-      </form>
+     
     </section>
+
+    <section>
+      <h2>Generate QR Code</h2>
+      <input type="text" id="qrText" placeholder="Enter text for QR code">
+      
+      <div id="qrCode"></div>
+    </section>    
+  </form>
+  <button type="button" onclick="generateQR()">Generate QR Code</button>
 
     <!-- <section>
       <h2>Your Products</h2>
@@ -62,7 +71,7 @@
   <footer>
     <p>&copy; 2025 Bridging Farmers and Consumers</p>
   </footer>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
   <script src="scripts.js"></script>
 </body>
 </html>
